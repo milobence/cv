@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(255, 202, 3, 0.5);
+}
+
+h1 {
+    color: #F90716;
+}
+
+h3 {
+    color: #FF5403;
+}
+
+hr {
+    border-style: dashed none none none;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
