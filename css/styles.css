@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(255, 202, 3, 0.5);
+    background-color: rgba(255, 202, 3, 0.35);
 }
 
 h1 {
@@ -11,13 +11,35 @@ h3 {
 }
 
 hr {
-    border-style: dashed none none none;
     border-color: grey;
+    border-style: dashed none none none;
     border-width: 5px;
     width: 5%;
 }
 
-img {
+a:link {
+    color: #F76E11;
+}
+
+a:visited {
+    color: #FF9F45;
+}
+
+a:hover {
+    color: #FC4F4F;
+}
+
+a:active {
+    color: #FFBC80;
+}
+
+
+
+.milo {
     height: 200px;
     width: 200px;
+}
+
+#heading {
+    color: #F90716;
 }
