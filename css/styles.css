@@ -39,11 +39,20 @@ a:active {
     color: #F6DA63;
 }
 
+.about {
+    position: relative;
+}
 
+.about .milo {
+    height: 15%;
+    width: 15%;
+}
 
-.milo {
-    height: 200px;
-    width: 200px;
+.about .about-me {
+    display: inline-block;
+    position: absolute;
+    left: 17.5%;
+    top: 7.5%;
 }
 
 #heading {
