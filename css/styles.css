@@ -44,15 +44,16 @@ a:active {
 }
 
 .about .milo {
-    height: 15%;
-    width: 15%;
+    display: inline-block;
+    height: 175px;
+    width: 175px;
 }
 
 .about .about-me {
     display: inline-block;
+    height: 175px;
+    margin-left: 20px;
     position: absolute;
-    left: 17.5%;
-    top: 7.5%;
 }
 
 #heading {
