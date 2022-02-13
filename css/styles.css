@@ -2,6 +2,7 @@
 
 html {
     font-family: Comfortaa;
+    margin: 0;
 }
 
 body {
@@ -39,21 +40,25 @@ a:active {
     color: #F6DA63;
 }
 
-.about {
+.top-container {
     position: relative;
 }
 
-.about .milo {
+.top-container .milo {
     display: inline-block;
     height: 175px;
     width: 175px;
 }
 
-.about .about-me {
+.top-container .about-me {
     display: inline-block;
     height: 175px;
     margin-left: 20px;
     position: absolute;
+}
+
+.middle-container {
+    text-align: justify;
 }
 
 #heading {

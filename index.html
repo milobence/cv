@@ -10,20 +10,21 @@
 </head>
 
 <body>
-    <div class="about">
+    <div class="top-container">
         <img class="milo" src="images/Én2.png" alt="Én.">
         <div class="about-me">
             <h1 id="heading">Milovszky Bence</h1>
-            <p><em>Egyetemi hallgató <strong> <a href="https://www.elte.hu/">az ELTE-n</a></strong>.</em></p>
+            <p><em>Egyetemi hallgató <strong> az ELTE-n</strong>.</em></p>
             <p>Szeretem a matekot és a programozást.</p>
         </div>
     </div>
     <hr>
-    <h3>Magamról</h3>
-    <p>Már kisgyerek korom óta érdekel a matematika, középiskolában is matematika tagozatos osztályba jártam, így nem volt kérdés, hogy az ELTE TTK matematika szakán folytatom a tanulmányaimat.
+    <div class="middle-container">
+        <h3>Magamról</h3>
+        <p>Már kisgyerek korom óta érdekel a matematika, középiskolában is matematika tagozatos osztályba jártam, így nem volt kérdés, hogy az ELTE TTK matematika szakán folytatom a tanulmányaimat.
         Az alapképzésem során kerültem közelebbi kapcsolatba a programozással, és mivel annyira nem vonzott sosem a pénzügyi és biztosítási világ, ezért úgy döntöttem, hogy
         a mesterképzéses tanulmányaimat programtervező informatikusként folytatom, amelyet a tervek szerint 2022 nyarán be is fejezek.
-    </p>
+        </p>
     <hr>
     <h3>Szakdolgozatok</h3>
     <ul>
@@ -32,7 +33,7 @@
     </ul>
     <hr>
     <h3>Tanulmányok</h3>
-    <table cellspacing="10">
+    <table>
         <thead>
             <tr>
                 <th>Dátum</th>
@@ -52,46 +53,34 @@
         </tbody>
     </table>
     <hr>
-    <h3>Skillek</h3>
-    <!-- 2x1-es táblázat kell, minden cellában egy 2 oszlopú táblázat van -->
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>Python</td>
-                        <td>⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Matlab</td>
-                        <td>⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>R</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>HTML</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>⭐</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3> <a href="hobbik.html">Hobbijaim</a></h3>
-    <h3> <a href="elérhetőség.html">Elérhetőség</a></h3>
+        <div class="skills">
+          <h2>Skillek.</h2>
+          <div class="skill-row">
+            <img class="" src="" alt="">
+            <h3>Python, HTML, CSS</h3>
+            <p>Bár a szakdolgozat és diplomamunka miatt sokat foglalkoztam Pythonnal, az utóbbi időben elkezdtem belemélyedni a HTML-be és a CSS-be.</p>
+            <p>Korábban Matlabban, R-ben és SQL-ben is programoztam.</p>
+          </div>
+          <div class="skill-row">
+            <img class="" src="" alt="">
+            <h3>Analitikus gondolkodás</h3>
+            <p>Mivel gyerekkorom óta érdekel a matematika és el is végeztem a matematika alapszakot, úgy gondolom, hogy a programozáson kívül a legerősebb képességem az analitikus gondolkodás.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Maradjunk kapcsolatban.</h2>
+          <h3>Elérhetőség és hobbik.</h3>
+          <p>Az alábbi két oldalon megtekinthetsz egy formanyomtatvány, amelynek kitöltésével kapcsolatban maradhatunk, valamint megnézheted, mivel szeretem a szabadidőmet tölteni.</p>
+          <a class="btn" href="elérhetőség.html">Elérhetőség</a>
+          <a class="btn" href="hobbik.html">Hobbik</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/milobence/">LinkedIn</a>
+        <p>© 2022 Milovszky Bence</p>
+      </div>
 </body>
 </html>
