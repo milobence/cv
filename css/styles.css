@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: Comfortaa;
     margin: auto;
@@ -16,7 +20,6 @@ h1 {
     color: #F90716;
     font-family: 'Allura', cursive;
     font-size: 7.5rem;
-    line-height: 2;
 }
 
 h2 {
@@ -28,12 +31,14 @@ h2 {
 h3 {
     color: #FF5403;
     font-size: 2rem;
+    margin: 0;
 }
 
 hr {
     border-color: grey;
     border-style: dashed none none none;
     border-width: 5px;
+    margin: 50px auto 50px auto;
     width: 5%;
 }
 
@@ -67,8 +72,8 @@ a:active {
 }
 
 .top-container img {
-    height: 256px;
     width: 256px;
+    padding-top: 70px;
 }
 
 .middle-container .about-me {
@@ -79,13 +84,12 @@ a:active {
 
 .middle-container .about-me .about-me-row {
     line-height: 2;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .middle-container .about-me .about-me-row .milo {
     float: left;
-    height: 25%;
-    margin-right: 1rem;
+    margin-right: 20px;
     width: 25%;
 }
 
@@ -105,37 +109,78 @@ a:active {
 }
 
 .middle-container .skills {
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     text-align: justify;
     width: 50%;
 }
 
 .middle-container .skills .skill-row {
     line-height: 2;
-    margin: 100px auto;
+    margin: 75px auto;
 }
 
 .middle-container .skills .skill-row .frontend-img {
     float: left;
-    margin: 0 1rem 0 0;
-    height: 25%;
+    margin: 0 20px 0 0;
     width: 25%;
 }
 
 .middle-container .skills .skill-row .error-img {
     float: right;
-    margin: 0 0 0 1rem;
-    height: 25%;
+    margin: 0 0 0 20px;
     width: 25%;
 }
 
 .middle-container .contact-me {
     line-height: 2;
-    margin: 175px auto;
+    margin: 0px auto 50px;
     text-align: justify;
     width: 50%;
 }
 
 .middle-container .contact-me a {
+    color: white;
     font-size: 2rem;
+}
+
+.btn {
+    background: #d98f34;
+    background-image: -webkit-linear-gradient(top, #d98f34, #b8472b);
+    background-image: -moz-linear-gradient(top, #d98f34, #b8472b);
+    background-image: -ms-linear-gradient(top, #d98f34, #b8472b);
+    background-image: -o-linear-gradient(top, #d98f34, #b8472b);
+    background-image: linear-gradient(to bottom, #d98f34, #b8472b);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .btn:hover {
+    background: #fcfc3c;
+    background-image: -webkit-linear-gradient(top, #fcfc3c, #d9c334);
+    background-image: -moz-linear-gradient(top, #fcfc3c, #d9c334);
+    background-image: -ms-linear-gradient(top, #fcfc3c, #d9c334);
+    background-image: -o-linear-gradient(top, #fcfc3c, #d9c334);
+    background-image: linear-gradient(to bottom, #fcfc3c, #d9c334);
+    text-decoration: none;
+  }
+
+.bottom-container {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bottom-container .link {
+    font-size: 2rem;
+    padding: 50px 0 20px;
+}
+
+.bottom-container .name {
+    padding: 20px 0;
+    margin: 0;
 }
