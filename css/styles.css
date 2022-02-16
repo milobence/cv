@@ -54,7 +54,6 @@ a:active {
 
 .top-container {
     height: 100vh;
-    position: relative;
 }
 
 .top-container h1 {
@@ -74,8 +73,9 @@ a:active {
 
 .middle-container .about-me .milo {
     float: left;
-    height: 175px;
-    width: 175px;
+    height: 25%;
+    margin-right: 20px;
+    width: 25%;
 }
 
 .middle-container .about-me .about-me-row {
