@@ -66,16 +66,10 @@ a:active {
     width: 256px;
 }
 
-.middle-container .about-me ul {
-    display: table;
-    margin: 0 auto;
-}
-
-.middle-container .about-me .milo {
-    float: left;
-    height: 25%;
-    margin-right: 20px;
-    width: 25%;
+.middle-container .about-me {
+    margin: auto;
+    text-align: justify;
+    width: 50%;
 }
 
 .middle-container .about-me .about-me-row {
@@ -83,14 +77,26 @@ a:active {
     margin: 100px auto;
 }
 
+.middle-container .about-me .about-me-row .milo {
+    float: left;
+    height: 25%;
+    margin-right: 20px;
+    width: 25%;
+}
+
+.middle-container .about-me ul {
+    display: table;
+    margin: 0 auto;
+}
+
 .middle-container .about-me .table {
     margin: 0 auto;
 }
 
-.middle-container .about-me {
-    margin: auto;
-    text-align: justify;
-    width: 50%;
+
+.middle-container .about-me .about-me-row table, th, td {
+    border: 3px solid;
+    border-collapse: collapse;
 }
 
 .middle-container .skills {
@@ -116,11 +122,6 @@ a:active {
     margin: 0 0 0 20px;
     height: 25%;
     width: 25%;
-}
-
-table, th, td {
-    border: 3px solid;
-    border-collapse: collapse;
 }
 
 .middle-container .contact-me {
