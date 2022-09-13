@@ -90,6 +90,18 @@ p {
     margin: auto;
 }
 
+.about-me-row-1, .about-me-row-2, .skill-row-1 {
+    line-height: 2;
+    margin: 0px auto 50px;
+    width: 50%;
+}
+
+.about-me-row-3, .skill-row-2, .contact-me-row-1 {
+    line-height: 2;
+    margin: 0px auto 25px;
+    width: 50%;
+}
+
 .middle-container h2 {
     margin: 20px auto;
     text-align: left;
@@ -99,14 +111,7 @@ p {
 .about-me {
     background-color: rgba(255, 202, 3, 0.65);
     text-align: justify;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.about-me-row-1 {
-    line-height: 2;
-    margin: 0px auto 50px;
-    width: 50%;
+    padding: 20px 0;
 }
 
 #milo {
@@ -115,21 +120,9 @@ p {
     width: 25%;
 }
 
-.about-me-row-2 {
-    line-height: 2;
-    margin: 0px auto 50px;
-    width: 50%;
-}
-
 .about-me-row-2 ul {
     display: table;
     margin: 0 auto;
-}
-
-.about-me-row-3 {
-    line-height: 2;
-    margin: 0px auto 25px;
-    width: 50%;
 }
 
 #table {
@@ -151,22 +144,10 @@ p {
     text-align: justify;
 }
 
-.skill-row-1 {
-    line-height: 2;
-    margin: 0px auto 50px;
-    width: 50%;
-}
-
 #frontend-img {
     float: left;
     margin: 0 20px 0 0;
     width: 25%;
-}
-
-.skill-row-2 {
-    line-height: 2;
-    margin: 0px auto 25px;
-    width: 50%;
 }
 
 #error-img {
@@ -183,13 +164,6 @@ p {
     background-color: rgba(255, 202, 3, 0.55);
     padding: 20px 0;
     text-align: justify;
-}
-
-.contact-me-row-1 {
-    line-height: 2;
-    margin: 0 auto 25px;
-    text-align: justify;
-    width: 50%;
 }
 
 .contact-me-row-1 a {
