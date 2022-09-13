@@ -1,0 +1,40 @@
+------------------
+       HTML
+------------------
+
+HTML = HyperText Markup Language
+codepen.io/pen
+
+Dokumentáció: MDN, W3 Schools, devdocs.io
+
+Korábbi weboldalak: web.archive.org
+
+Vízszintes vonal (nem kell lezárni): <hr>
+
+HTML5 Boilerplate VSC-ben: html:5
+
+Dőlt szöveg (le kell zárni): i helyett em
+
+Félkövér szöveg (le kell zárni): b helyett strong
+
+Listák (minden taget le kell zárni):
+	- Rendezett lista: <ol> után a lista különböző elemeit <li> tagekkel választjuk el egymástól - megadhatunk más kezdőértéket és más sorszámozási stílust is
+	- Rendezetlen lista: <ul> után a lista különböző elemeit <li> tagekkel választjuk el egymástól
+
+Kép (nem kell lezárni a taget): <img> tagek között, meg kell adni a helyét (src) és egy szöveget (alt)
+
+Link (le kell zárni a taget): anchor tag <a>, hreffel megadjuk, hogy mit szeretnénk linkelni
+
+Táblázatok (mindent le kell zárni): <table> tag után
+	- <thead> tag után a tábla header részét tudjuk megadni, <th> tagekkel lezárva a cellákat
+	- <tbody> tag után a tábla body részét tudjuk megadni: <tr> tagekkel a sorokat, <td> tagekkel a cellákat tudjuk elválasztani egymástól (lásd még: colspan, rowspan)
+
+Űrlapot a <form> tag között tudjuk megadni (lásd még: később)
+
+Class vs id: a tageket el tudjuk nevezni class-szal és id-vel. A különbség az, hogy ugyanazt a classt több tagnek is meg tudjuk adni, és .class_nev-vel hivatkozunk rá CSS-ben, míg az id-t csak 1 tagnek tudjuk adni és #id_nev-vel hivatkozunk rá CSS-ben.
+
+Div: Ezzel tudjuk részekre bontani a weboldalt. Nincs hatással a weboldalra, ha nincs hozzá tartozó CSS kód.
+
+Span: Ezzel tudunk kiemelni bizonyos részeket a szövegben. Nincs hatással a weboldara, ha nincs hozzá tartozó CSS kód.
+
+Komment: <!-- -->
