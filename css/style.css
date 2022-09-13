@@ -208,7 +208,7 @@ p {
 
 
 .bottom-container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 0;
 }
 
@@ -242,6 +242,10 @@ p {
         font-size: 5vw;
     }
 
+    p {
+        font-size: 3vw;
+    }
+
     .top-container img {
         width: 20vh;
         padding-top: 3%;
@@ -256,7 +260,7 @@ p {
     }
 
     .about-me-row-1, .about-me-row-2, .skill-row-1 {
-        margin: 0 2% 50px;
+        margin: 0 2% 30px;
         width: 94%;
     }
 
@@ -265,11 +269,23 @@ p {
     }
 
     .about-me-row-3, .skill-row-2, .contact-me-row-1 {
-        margin: 0 2% 25px;
+        margin: 0 2% 15px;
         width: 94%;
     }
 
     #milo, #frontend-img, #error-img {
         display: none;
+    }
+
+    .link {
+        font-size: 7.5vw;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .contact-me-row-1 span {
+        display: block;
+        margin: 10px 0;
     }
 }
