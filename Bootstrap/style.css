@@ -10,6 +10,18 @@ body {
     font-size: 1.5rem;
 }
 
+.dropdown-bg {
+    background-color: rgb(20,20,20);
+}
+
+.dropdown-color {
+    color: rgba(255,255,255,.55);
+}
+
+.br {
+    border-right: 2px solid rgba(255,255,255,.55);
+}
+
 #content-container {
     background-color: #FFF;
 }
@@ -76,6 +88,12 @@ video {
 
 #starcraft {
     width: 75%;
+}
+
+@media screen and (max-width: 992px) {
+    .br {
+        border-right: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
