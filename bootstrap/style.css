@@ -24,7 +24,7 @@ body {
 
 #content-container {
     background-color: #FFF;
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 h1 {
@@ -82,7 +82,7 @@ video, #fanhui, #az-stat, #starcraft {
 }
 
 #moves {
-    width: 220px;
+    width: 180px;
 }
 
 /* érdekességhez szabály */
@@ -114,5 +114,9 @@ footer {
 @media screen and (max-width: 992px) {
     video, #fanhui, #az-stat, #starcraft {
         width: 75%;
+    }
+
+    #content-container {
+        padding: 0 1rem;
     }
 }
