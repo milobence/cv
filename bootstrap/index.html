@@ -25,7 +25,7 @@
               <li><a class="dropdown-item dropdown-color" href="#index">Bevezetés</a></li>
               <li><hr class="dropdown-divider dropdown-color"></li>
               <li><a class="dropdown-item dropdown-color" href="#attekintes">Áttekintés</a></li>
-              <li><a class="dropdown-item dropdown-color video-link" href="#video">Videó az AlphaGo-ról</a></li>
+              <li><a class="dropdown-item dropdown-color" href="#video">Videó az AlphaGo-ról</a></li>
               <li><a class="dropdown-item dropdown-color" href="#miazago">Mi az a go?</a></li>
             </ul>
           </li>
@@ -85,7 +85,7 @@
       <div id="index">
           <h1>Az AlphaGo és változatai - a mesterséges intelligencia egyik úttörői</h1>
           <h2>A honlap tartalma röviden</h2>
-          <p>A honlap ismerteti a <a href="#rules-container">go szabályait</a>, illetve igyekszik bemutatni a <a href="#program-container">különböző programokat</a>.</p>
+          <p>A honlap ismerteti a <a href="#rules">go szabályait</a>, illetve igyekszik bemutatni a <a href="#program">különböző programokat</a>.</p>
           <h2>Áttekintés</h2>
           <h3 id="attekintes">AlphaGo</h3>
           <p>Az <strong>AlphaGo</strong> modell a mesterséges intelligencia-kutatás egy emblematikus mérföldkövének tekinthető, hisz ez volt az első olyan go program, amely előnykő nélkül győzött le profi játékost: <strong><time datetime="2015-10">2015. októberében</time></strong> 5:0-ra győzte le a játék Európa bajnokát, <strong>Fan Huit</strong>. Ezt a sikert a kutatók csak egy évtizeddel későbbre várták. Szintén ez a program volt az, amelyik <strong><time datetime="2016-03">2016. márciusában</time></strong> 4:1-re legyőzte a játék tízszeres világbajnokát, <strong>Lee Szedolt</strong>.</p>
@@ -93,16 +93,18 @@
             <img src="images/site/fanhui.jpg" alt="Fan Hui" id="fanhui" class="center">
             <figcaption class="center-caption">Fan Hui, Európa-bajnok go játékos</figcaption>
           </figure>
-          <p class="video-desc">Az alábbi videón egy rövid összefoglaló látható az AlphaGo-ról.</p>
-          <video width="480" height="270" controls id="video">
+          <p>Az alábbi videón egy rövid összefoglaló látható az AlphaGo-ról.</p>
+          <div class="container-sm">
+            <video controls id="video">
               <source src="video/alphago.mp4" type="video/mp4">
           </video>
+          </div>
           <h3 id="miazago">De mi is az a go?</h3>
-          <p>A go társasjáték eredete körülbelül <strong>négyezer évvel</strong> ezelőttig nyúlik vissza. Bár a szabályrendszere egyszerű és könnyen meg lehet tanulni, a közel <strong>10^170-féle</strong> lehetséges táblaállás miatt napjaink egyik legbonyolultabb táblajátékának tekinthető, éppen ezért kedvenc célpontja a mesterséges intelligencia kutatóknak.</p>
+          <p>A go társasjáték eredete körülbelül <strong>négyezer évvel</strong> ezelőttig nyúlik vissza. Bár a szabályrendszere egyszerű és könnyen meg lehet tanulni, a közel <strong>10<sup>170</sup>-féle</strong> lehetséges táblaállás miatt napjaink egyik legbonyolultabb táblajátékának tekinthető, éppen ezért kedvenc célpontja a mesterséges intelligencia kutatóknak.</p>
       </div>
   
       <div id="rules">
-          <h2>A go szabályai</h2>
+          <h2 class="new">A go szabályai</h2>
           <p>Az alábbiakban bemutatásra kerülnek eme egyszerű játéknak a szabályai.</p>
           <h3 id="alapismeretek">Alapismeretek</h3>
           <p>A go játék szabályait <strong>könnyű</strong> elsajátítani. A játékot a leggyakrabban <strong>19x19-es</strong> táblán játszák. A játékosok a mezők <strong>sarkaira</strong> teszik a köveiket. A legtöbb hasonló játékkal ellentétben a <strong>fekete kezd</strong>, utána felváltva követik egymást a játékosok. Egyik játékos sincs lépéskényszerben, <strong>megengedett</strong> tehát <strong>a passzolás</strong>. Mindig csak egy <strong>üres helyre</strong> lehet lépni: ez számít egy kő lerakásának. Több olyan követ, amik szomszédosan összeérnek, <strong>csoportoknak</strong> nevezünk. Egy kőnek vagy egy csoportnak pontosan annyi <strong>élete</strong> van, ahány szomszédos mező szabad. Egy kőnek <strong>legfeljebb 4</strong> élete van, de a csoportoknak <strong>több</strong> életük is lehet. Ha egy játékos úgy tesz le egy követ, hogy az ellenfél kövének vagy csoportjának elfogy az élete, akkor <strong>foglyul ejti</strong> azt/azokat.</p>
@@ -120,7 +122,7 @@
       </div>
   
       <div id="program">
-          <h2>A különböző változatok</h2>
+          <h2 class="new">A különböző változatok</h2>
           <p>Az elmúlt években számos továbbfejleszett változata készült el az AlphaGo-nak, amelyek nem csak a got, hanem a sakkot és a sógit is el tudták sajátítani, valamint kiemelkedő eredményeket értek el számítógépes játékokban is.</p>
           <h3 id="alphago">Az AlphaGo megszületése és a go nagymester visszavonulása</h3>
           <p>Az <strong>AlphaGo</strong> program a Google Deepmind fejlesztői csapatának mesterséges intelligenciája, amelyet <a href="https://azure.microsoft.com/hu-hu/overview/what-is-machine-learning-platform/#techniques" target="_blank">felügyelt és megerősítéses tanulással</a> tanítottak be, ehhez egy játékadatbázist használtak fel. A program egy úgynevezett <span lang="en"><strong>Monte Carlo Tree Search</strong></span> algoritmust használ, mely képes arra, hogy feltérképezze a lehetséges játékállásokat és ezeknek egy valószínűséget adjon. Ez az algoritmus kezdetben a go játék esetében csak <strong>egy erősebb amatőr</strong> szintét érte el. Az AlphaGo, a hatásosabb keresés érdekében, az algoritmust <strong>két neurális hálózattal kombinálta</strong>, melyek a <strong>lépések kiválasztásáért</strong> és <strong>kiértékeléséért</strong> felelősek. A program korábbi go programok ellen egy kivételével minden meccsét megnyerte.</p>
@@ -174,11 +176,119 @@
       </div>
   
       <div id="gallery">
+        <h2 class="new">Galéria</h2>
+        <p>Néhány kép a témával kapcsolatban:</p>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <figure>
+                <img src="images/slide/alphago1.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago2.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago3.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago4.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago5.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago7.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago9.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago10.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago11.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago12.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago13.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago14.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago15.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <figure>
+                <img src="images/slide/alphago17.jpg" class="d-block w-100 carousel-img" alt="...">
+                <figcaption class="center-caption">ASD</figcaption>
+              </figure>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
 
   </div>
+
+  <footer>
+    <div class="container-fluid col-md-8 col-sm-10 col-xs-12">
+      <p>Készítette: Milovszky Bence - 2022</p>
+      <p><a href="">LinkedIn</a></p>
+      <p><a href="">Ugrás a lap tetejére.</a></p>
+    </div>
+  </footer>
     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!--<script src="index.js"></script>-->
 </html>
