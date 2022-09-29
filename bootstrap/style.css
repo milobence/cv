@@ -34,15 +34,17 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
-    margin-top: 8%;
+    margin: 5% 0 2%;
+    font-weight: bold;
 }
 
 .h2-content {
-    margin: 0;
+    margin-top: 3%;
 }
 
 h3 {
     font-size: 2rem;
+    margin: 2% 0;
 }
 
 p {
@@ -79,7 +81,7 @@ video, #fanhui, #az-stat, #starcraft {
 
 .float-left {
     float: left;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 #moves {
@@ -119,5 +121,9 @@ footer {
 
     #content-container {
         padding: 0 1.5rem;
+    }
+
+    h2 {
+        margin-top: 12%;
     }
 }
